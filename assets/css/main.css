@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-image:var(--primary-color);
+    background:var(--primary-color);
     z-index: 3;
 }
 .header__scroll{
@@ -947,4 +947,82 @@ i.home-product-item__like-icon-fill {
 .home__product-AfterPay{
     width: 100%;
     margin-bottom: 20px;
+}
+.home__product-contact{
+    background-color: var(--primary-color-text);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* Contact product */
+.home__product-contact{
+
+}
+.home__product-contact_heading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.home__product-contact-sudmit{
+    background-color: var(--white-color);
+    position: relative;
+    height: 30px;
+}
+.home__product-contact-icon{
+    font-size: 1.7rem;
+    color: var(--white-color);
+    padding:10px 10px 0 0   ;
+
+}
+.home__product-contact-decription{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.home__product-contact-sudmit-input{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.home__product-contact-sudmit-btn{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 100%;
+}
+.item-glass-more-icon{
+
+}
+/* footer */
+.footer__info{
+
+}
+.footer__info img{
+    height: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0 20px;
+}
+.footer__info-Logo{
+
+}
+.footer__info-heading{
+
+}
+.footer__info-list{
+
+}
+.footer__info-item{
+
+}
+.footer__license{
+
+}
+.footer__license-link{
+
 }
