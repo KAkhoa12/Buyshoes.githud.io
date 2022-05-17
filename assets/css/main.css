@@ -972,7 +972,7 @@ i.home-product-item__like-icon-fill {
 .home__product-contact-icon{
     font-size: 1.7rem;
     color: var(--white-color);
-    padding:10px 10px 0 0   ;
+    padding:10px 10px 0 0 ;
 
 }
 .home__product-contact-decription{

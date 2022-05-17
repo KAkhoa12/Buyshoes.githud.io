@@ -28,7 +28,7 @@ body{
     --header-height:120px;
     --header-with-search-height: calc(  var(--header-height) - var(--navbar-height) );
 }
-.btn{
+.btn{ 
     width: 124px;
     height: 34px;
     text-decoration: none;
