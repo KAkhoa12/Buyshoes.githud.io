@@ -846,6 +846,7 @@ i.home-product-item__like-icon-fill {
 }
 .home__product-best-seller-heading{
     background: var(--primary-color);
+    padding: 10px 0;
 }
 .home__product-best-seller-item{
     display: block;
@@ -859,7 +860,7 @@ i.home-product-item__like-icon-fill {
 }
 .home__product-best-seller-heading span{
     display: block;
-    font-size: 45px;
+    font-size: 4.5rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -928,4 +929,22 @@ i.home-product-item__like-icon-fill {
     font-size: 1.4rem;
     padding-left: 20px;
     padding-bottom: 10px;
+}
+.home__product-best-seller-heading span.home__product-best-seller-heading-more{
+    display: inline;
+    font-size: 2rem ;
+    border: 2px solid var(--white-color);
+    padding: 5px 10px;   
+    border-radius: 5px;
+}
+.home__product-best-seller-heading div{
+    text-align: center;
+
+}
+.home__product-best-seller-heading-more-link{
+    text-decoration: none;
+}
+.home__product-AfterPay{
+    width: 100%;
+    margin-bottom: 20px;
 }
