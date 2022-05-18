@@ -1,0 +1,30 @@
+@media screen and (max-width: 1023px ) {
+    :root{
+        --navbar-height:0px;
+        --header-height:68px;
+    }
+   .hide-on-mobile-tablet{
+       display: none;
+   }
+   .header__cart{
+       width: 80px;
+       text-align: right;
+   }
+   
+} 
+
+
+/* tablet */
+@media screen and (min-width:740px) and (max-width:1023px) { 
+   .hide-on-tablet{
+       display: none;
+   }
+    
+}
+/* mobile */
+@media screen and (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    
+}
