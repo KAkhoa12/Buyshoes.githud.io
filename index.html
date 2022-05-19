@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/base1.css">
     <link rel="stylesheet" href="./assets/css/main.css"> 
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>Buys Shoes 2hand</title>
 </head>
     <body>
@@ -21,7 +22,7 @@
                 <div class="grid wide">
                     <nav class="header__navbar">
                         <div class="header__navbar-header">
-                            <ul class="header__navbar-list">
+                            <ul class="header__navbar-list hide-on-mobile-tablet">
                                 <li class="header_navbar-items border-btn-s">
                                     <i class="fa-solid fa-phone"></i>
                                     <span class=""> Hotline: +8412345678</span>
@@ -38,10 +39,12 @@
                                     </a>
                                 </li>
                             </ul>
+                           
+                            
                             <div class="header__logo">
                                 <img src="./assets/img/kisspng-sports-shoes-sneakers-logo-basketball-shoe-5bed52df6ec982.4903648915422799034538.png" alt="">
                             </div>
-                            <ul class="header__navbar-list">
+                            <ul class="header__navbar-list hide-on-mobile-tablet">
                                 <li class="header_navbar-items border-btn-m">
                                     <span class="header_navbar-user header_navbar-login ">
                                         Log in
@@ -61,7 +64,11 @@
             <div class="header__scroll">
                 <div class="grid wide">
                     <nav class="header_navbar">
+                        
                         <div class="header-with-search">
+                            <label for="nav__mobile-input" class="nav__bar-btn">
+                                <i class="fa-solid fa-bars nav__bar-btn-icon"></i>
+                            </label>
                             <div class="header__navbar-search">
                                 <div class="header__search-input-wrap">
                                     <input type="text" class="header__search-input" placeholder="What do you need to find ?
@@ -234,7 +241,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header__navbar-nav">
+                        <div class="header__navbar-nav hide-on-mobile-tablet">
                             <ul class="header__navbar-nav-list">
                                 <li class="header__navbar-nav-items">
                                     home
@@ -288,6 +295,49 @@
                                 <li class="header__navbar-nav-items">
                                     sale in week
                                     <i class="fa-solid fa-biohazard"></i>                        
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="checkbox" hidden class="nav__input" id="nav__mobile-input">
+                        <label for="nav__mobile-input"  class="nav__over-play"></label>
+                        <div class="header__navbar-nav_tablet-mobile ">
+                            <label for="nav__mobile-input" class="nav__mobile-close">
+                                <i class="fa-solid fa-xmark nav__bar-btn-icon-box"></i><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                            </label>
+                            <ul class="header__navbar-nav-list_mobile">
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    home
+                                </li>
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    brand stuff
+                                    
+                                </li>
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    type shoes
+                                   
+                                </li>
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    accessory
+                                    
+                                </li>
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    bestseller
+                                </li>
+                                <li class="header__navbar-nav-items_mobile-tablet">
+                                    sale in week
+                                    <i class="fa-solid fa-biohazard"></i>                        
+                                </li>
+                            </ul>
+                            <ul class="header__navbar-list_mobile-tablet">
+                                <li class="header_navbar-items border-btn-m">
+                                    <span class="header_navbar-user header_navbar-login ">
+                                        Log in
+                                    </span>
+                                </li>
+                                <li class="header_navbar-items border-btn-m--hover">
+                                    <span class="header_navbar-user header_navbar-register">
+                                        Register
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -345,747 +395,756 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                    <div class="row">
-                        <!-- category dùng trong trang sản ph -->
-                        <!-- <div class="col p-2-4">
-                            <nav class="category">
-                                <h3>
-                                    <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                                    Category
-                                </h3>
-                                <ul class="category__list">
-                                    <li class="category__item">Spring</li>
-                                    <li class="category__item">Sumer</li>
-                                    <li class="category__item">Autumn</li>
-                                    <li class="category__item">Winter</li>
-                                    <li class="category__item">School</li>
-                                </ul>
-                            </nav>
-                        </div> -->
-                        <div class="col p-12">          
-                            <div class="home__product-brand">   
-                                <a href="" class="home__product-brand-link">
-                                    <h3 class="home-product_brand-heding">
-                                        NIKE  &nbsp;
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </h3>               
-
-                                </a>
-                                <div class="row">
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
+                    <div class="col-p-12">
+                        <div class="row">
+                            <!-- category dùng trong trang sản ph -->
+                            <!-- <div class="col p-2-4">
+                                <nav class="category">
+                                    <h3>
+                                        <i class="category__heading-icon fa-solid fa-list-ul"></i>
+                                        Category
+                                    </h3>
+                                    <ul class="category__list">
+                                        <li class="category__item">Spring</li>
+                                        <li class="category__item">Sumer</li>
+                                        <li class="category__item">Autumn</li>
+                                        <li class="category__item">Winter</li>
+                                        <li class="category__item">School</li>
+                                    </ul>
+                                </nav>
+                            </div> -->
+                            <div class="row">
+                                <div class="col p-12">          
+                                    <div class="home__product-brand">   
+                                        <a href="" class="home__product-brand-link">
+                                            <h3 class="home-product_brand-heding">
+                                                NIKE  &nbsp;
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </h3>               
+        
+                                        </a>
+                                        <div class="row">
+                                            <div class="col p-2-4 t-3  ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
                                                 </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
                                                 </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
                                                     </div>
-                                                </a>
-                                            </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-0 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
                                         </div>
-                                    </div> 
+                                    </div>
+                                    <div class="home__product-brand">   
+                                        <a href="" class="home__product-brand-link">
+                                            <h3 class="home-product_brand-heding">
+                                                NIKE  &nbsp;
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </h3>               
+        
+                                        </a>
+                                        <div class="row">
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-0 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="home__product-brand">   
+                                        <a href="" class="home__product-brand-link">
+                                            <h3 class="home-product_brand-heding">
+                                                NIKE  &nbsp;
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </h3>               
+        
+                                        </a>
+                                        <div class="row">
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-0 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="home__product-brand">   
+                                        <a href="" class="home__product-brand-link">
+                                            <h3 class="home-product_brand-heding">
+                                                NIKE  &nbsp;
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </h3>               
+        
+                                        </a>
+                                        <div class="row">
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-3 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="col p-2-4 t-0 ">
+                                                <div class="home__product-item">
+                                                    <div class="home__product-item-info">
+                                                        <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
+                                                        <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
+                                                        <div class="home-product-item__price">
+                                                            <span class="home-product-item__price-old">
+                                                                $120.00
+                                                            </span>
+                                                            <span class="home-product-item_price-current">$100.00</span>
+                                                        </div>
+                                                        
+                                                        <div class="home-product-item__favorite">
+                                                            <span>BEST SALER</span>
+                                                        </div>
+                                                        <div class="home-product-item__sale-off">
+                                                            <span class="home-product-item__sale-off-label">SALE -10% </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="home__product-item-glass">
+                                                        <a href="#">
+                                                            <div class="item-glass-more">
+                                                                <span class="glass-center">
+                                                                    <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
+                                                                    <span >More</span>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="home__product-brand">   
-                                <a href="" class="home__product-brand-link">
-                                    <h3 class="home-product_brand-heding">
-                                        NIKE  &nbsp;
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </h3>               
-
-                                </a>
-                                <div class="row">
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="home__product-brand">   
-                                <a href="" class="home__product-brand-link">
-                                    <h3 class="home-product_brand-heding">
-                                        NIKE  &nbsp;
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </h3>               
-
-                                </a>
-                                <div class="row">
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="home__product-brand">   
-                                <a href="" class="home__product-brand-link">
-                                    <h3 class="home-product_brand-heding">
-                                        NIKE  &nbsp;
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </h3>               
-
-                                </a>
-                                <div class="row">
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col p-2-4 ">
-                                        <div class="home__product-item">
-                                            <div class="home__product-item-info">
-                                                <div class="product__item-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg)"></div>
-                                                <h4 class="product__name"> NIKE_AIR_FORCE_1</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">
-                                                        $120.00
-                                                    </span>
-                                                    <span class="home-product-item_price-current">$100.00</span>
-                                                </div>
-                                                
-                                                <div class="home-product-item__favorite">
-                                                    <span>BEST SALER</span>
-                                                </div>
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-label">SALE -10% </span>
-                                                </div>
-                                            </div>
-                                            <div class="home__product-item-glass">
-                                                <a href="#">
-                                                    <div class="item-glass-more">
-                                                        <span class="glass-center">
-                                                            <i class="fa-solid fa-arrow-right item-glass-more-icon"></i>
-                                                            <span >More</span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="home__product-ad home__product-brand">
-                            <div class="row">
-                                <div class="col p-4 ">
-                                    <div class="home__product-ad-info">
-                                        <h3 class="home__product-ad-heading">New style new look</h3>
-                                        <p class="home__product-ad-decription">
-                                            Comfortable for a new dynamic day with NIKE stepping straight into the future
-                                        </p>
-                                        <p class="home__product-ad-solgan">Just Do It </p>
+                    <div class="col p-12">
+                        <div class="row">
+                            <div class="home__product-ad home__product-brand">
+                                <div class="row">
+                                    <div class=" col p-4 t-5">
+                                        <div class="home__product-ad-info">
+                                            <h3 class="home__product-ad-heading">New style new look</h3>
+                                            <p class="home__product-ad-decription">
+                                                Comfortable for a new dynamic day with NIKE stepping straight into the future
+                                            </p>
+                                            <p class="home__product-ad-solgan">Just Do It </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col p-8">
-                                    <img src="./assets/img/baner_people-1.jpg" alt="" class="home__product-ad-img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>      
-                    <div class="row">
-                        <div class="home__product-ad home__product-brand">
-                            <div class="row">
-                                <div class="col p-8">
-                                    <img src="./assets/img/baner_people-2.jpg   " alt="" class="home__product-ad-img">
-                                </div>
-                                <div class="col p-4 ">
-                                    <div class="home__product-ad-info">
-                                        <h3 class="home__product-ad-heading">New style new look</h3>
-                                        <p class="home__product-ad-decription">
-                                            Comfortable for a new dynamic day with NIKE stepping straight into the future
-                                        </p>
-                                        <p class="home__product-ad-solgan">Just Do It </p>
+                                    <div class=" col p-8 t-7">
+                                        <img src="./assets/img/baner_people-1.jpg" alt="" class="home__product-ad-img">
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>   
                     </div>   
+                    <div class="col p-12">
+                        <div class="row">
+                            <div class="home__product-ad home__product-brand">
+                                <div class="row">
+                                    <div class="col p-8 t-7">
+                                        <img src="./assets/img/baner_people-2.jpg   " alt="" class="home__product-ad-img">
+                                    </div>
+                                    <div class="col p-4 t-5">
+                                        <div class="home__product-ad-info">
+                                            <h3 class="home__product-ad-heading">New style new look</h3>
+                                            <p class="home__product-ad-decription">
+                                                Comfortable for a new dynamic day with NIKE stepping straight into the future
+                                            </p>
+                                            <p class="home__product-ad-solgan">Just Do It </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>  
+                   <div class="col p-12">
                     <div class="row">
                         <div class="home__product-model">
                             <div class="row">
@@ -1135,202 +1194,207 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
-                    <div class="row">
-                        <div class="home-logo-brand">
-                            <a href="" class="logo-brand-heading-link">
-                                <h3 class="logo-brand-more">
-                                    Trending Brand
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </h3>
-                            </a>
-                            <div class="row">   
-                                    <div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div><div class="col p-2">
-                                        <a href="#" class="home-logo-link">
-                                            <div class="home-logo-brand__item">
-                                                <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
-                                                <div class="logo-brand-heading">NIKE</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                               
+                    </div> 
+                   </div> 
+                    <div class="col p-12">
+                        <div class="row">
+                            <div class="home-logo-brand">
+                                <a href="" class="logo-brand-heading-link">
+                                    <h3 class="logo-brand-more">
+                                        Trending Brand
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                                <div class="row">   
+                                        <div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div><div class="col p-2">
+                                            <a href="#" class="home-logo-link">
+                                                <div class="home-logo-brand__item">
+                                                    <div class="logo-brand-img" style="background-image: url(./assets/img/Logonike.png);"></div>     
+                                                    <div class="logo-brand-heading">NIKE</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                   
+                                </div>
                             </div>
                         </div>
                     </div>   
-                    <div class="row">
-                        <div class="home__product-best-seller">
-                            <div class="row">
-                                <div class="col p-3">
-                                    <div class="home__product-best-seller-heading">
-                                        <span>Bestseller</span>
-                                        <span>Bestseller</span>
-                                        <span class="home__product-best-seller-heading-active">Bestseller</span>
-                                        <span>Bestseller</span>
-                                        <span>Bestseller</span>
-                                       <div>
-                                           <a href="" class="home__product-best-seller-heading-more-link">
-                                               <span  class="home__product-best-seller-heading-more">
-                                               Wacth More...
-
-                                           </a>
-                                        </span>
-                                       </div>
+                    <div class="col p-12">  
+                        <div class="row">
+                            <div class="home__product-best-seller">
+                                <div class="row">
+                                    <div class="col p-3 t-6">
+                                        <div class="home__product-best-seller-heading">
+                                            <span>Bestseller</span>
+                                            <span>Bestseller</span>
+                                            <span class="home__product-best-seller-heading-active">Bestseller</span>
+                                            <span>Bestseller</span>
+                                            <span>Bestseller</span>
+                                           <div>
+                                               <a href="" class="home__product-best-seller-heading-more-link">
+                                                   <span  class="home__product-best-seller-heading-more">
+                                                   Wacth More...
+    
+                                               </a>
+                                            </span>
+                                           </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col p-9">
-                                   <div class="row">
-                                        <div class="col p-3">
-                                            <div class="home__product-best-seller-item">
-                                                <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
-                                                <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
-
-                                                <div class="home__product-best-seller-item-price">
-                                                    <span class="home__product-best-seller-item-price_old">$120.00</span>
-                                                    <span class="home__product-best-seller-item-price-curterant">$100.00</span>
-                                                    <div class="home__product-best-seller-item-price-percent"> - 20%</div>
-                                                </div>
-                                                <div class="home__product-best-seller-item-like">
-                                                    <input type="checkbox" hidden id="item__like" class="item__item-checked">
-                                                    <label for="item__like" class="item__like-empty">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </label>
-                                                    <label for="item__like" class="item__like-fill">
-                                                        <i class="fa-solid fa-heart"></i>
-                                                    </label>
-                                                    <span>101</span>
-                                                </div>
-                                                <div class="home__product-best-seller-item-rating">
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col p-3">
-                                            <div class="home__product-best-seller-item">
-                                                <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
-                                                <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
-
-                                                <div class="home__product-best-seller-item-price">
-                                                    <span class="home__product-best-seller-item-price_old">$120.00</span>
-                                                    <span class="home__product-best-seller-item-price-curterant">$100.00</span>
-                                                    <div class="home__product-best-seller-item-price-percent"> - 20%</div>
-                                                </div>
-                                                <div class="home__product-best-seller-item-like">
-                                                    <input type="checkbox" hidden id="item__like1" class="item__item-checked">
-                                                    <label for="item__like1" class="item__like-empty">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </label>
-                                                    <label for="item__like1" class="item__like-fill">
-                                                        <i class="fa-solid fa-heart"></i>
-                                                    </label>
-                                                    <span>101</span>
-                                                </div>
-                                                <div class="home__product-best-seller-item-rating">
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                    <div class="col p-9 t-6">
+                                       <div class="row">
+                                            <div class="col p-3 t-12">
+                                                <div class="home__product-best-seller-item">
+                                                    <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
+                                                    <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
+    
+                                                    <div class="home__product-best-seller-item-price">
+                                                        <span class="home__product-best-seller-item-price_old">$120.00</span>
+                                                        <span class="home__product-best-seller-item-price-curterant">$100.00</span>
+                                                        <div class="home__product-best-seller-item-price-percent"> - 20%</div>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-like">
+                                                        <input type="checkbox" hidden id="item__like" class="item__item-checked">
+                                                        <label for="item__like" class="item__like-empty">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                        </label>
+                                                        <label for="item__like" class="item__like-fill">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </label>
+                                                        <span>101</span>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-rating">
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col p-3">
-                                            <div class="home__product-best-seller-item">
-                                                <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
-                                                <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
-
-                                                <div class="home__product-best-seller-item-price">
-                                                    <span class="home__product-best-seller-item-price_old">$120.00</span>
-                                                    <span class="home__product-best-seller-item-price-curterant">$100.00</span>
-                                                    <div class="home__product-best-seller-item-price-percent"> - 20%</div>
-                                                </div>
-                                                <div class="home__product-best-seller-item-like">
-                                                    <input type="checkbox" hidden id="item__like2" class="item__item-checked">
-                                                    <label for="item__like2" class="item__like-empty">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </label>
-                                                    <label for="item__like2" class="item__like-fill">
-                                                        <i class="fa-solid fa-heart"></i>
-                                                    </label>
-                                                    <span>101</span>
-                                                </div>
-                                                <div class="home__product-best-seller-item-rating">
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                            <div class="col p-3 t-0">
+                                                <div class="home__product-best-seller-item">
+                                                    <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
+                                                    <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
+    
+                                                    <div class="home__product-best-seller-item-price">
+                                                        <span class="home__product-best-seller-item-price_old">$120.00</span>
+                                                        <span class="home__product-best-seller-item-price-curterant">$100.00</span>
+                                                        <div class="home__product-best-seller-item-price-percent"> - 20%</div>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-like">
+                                                        <input type="checkbox" hidden id="item__like1" class="item__item-checked">
+                                                        <label for="item__like1" class="item__like-empty">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                        </label>
+                                                        <label for="item__like1" class="item__like-fill">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </label>
+                                                        <span>101</span>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-rating">
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col p-3">
-                                            <div class="home__product-best-seller-item">
-                                                <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
-                                                <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
-
-                                                <div class="home__product-best-seller-item-price">
-                                                    <span class="home__product-best-seller-item-price_old">$120.00</span>
-                                                    <span class="home__product-best-seller-item-price-curterant">$100.00</span>
-                                                    <div class="home__product-best-seller-item-price-percent"> - 20%</div>
+                                            <div class="col p-3 t-0 m-0">
+                                                <div class="home__product-best-seller-item">
+                                                    <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
+                                                    <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
+    
+                                                    <div class="home__product-best-seller-item-price">
+                                                        <span class="home__product-best-seller-item-price_old">$120.00</span>
+                                                        <span class="home__product-best-seller-item-price-curterant">$100.00</span>
+                                                        <div class="home__product-best-seller-item-price-percent"> - 20%</div>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-like">
+                                                        <input type="checkbox" hidden id="item__like2" class="item__item-checked">
+                                                        <label for="item__like2" class="item__like-empty">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                        </label>
+                                                        <label for="item__like2" class="item__like-fill">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </label>
+                                                        <span>101</span>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-rating">
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="home__product-best-seller-item-like">
-                                                    <input type="checkbox" hidden id="item__like3" class="item__item-checked">
-                                                    <label for="item__like3" class="item__like-empty">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </label>
-                                                    <label for="item__like3" class="item__like-fill">
-                                                        <i class="fa-solid fa-heart"></i>
-                                                    </label>
-                                                    <span>101</span>
-                                                </div>
-                                                <div class="home__product-best-seller-item-rating">
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
-                                                    <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                            </div>
+                                            <div class="col p-3 t-0 m-0">
+                                                <div class="home__product-best-seller-item">
+                                                    <div class="home__product-best-seller-img" style="background-image: url(./assets/img/NIKE_AIR_FORCE_1.jpg) ;"></div>
+                                                    <div class="home__product-best-seller-name">NIKE_AIR_FORCE_1</div>
+    
+                                                    <div class="home__product-best-seller-item-price">
+                                                        <span class="home__product-best-seller-item-price_old">$120.00</span>
+                                                        <span class="home__product-best-seller-item-price-curterant">$100.00</span>
+                                                        <div class="home__product-best-seller-item-price-percent"> - 20%</div>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-like">
+                                                        <input type="checkbox" hidden id="item__like3" class="item__item-checked">
+                                                        <label for="item__like3" class="item__like-empty">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                        </label>
+                                                        <label for="item__like3" class="item__like-fill">
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </label>
+                                                        <span>101</span>
+                                                    </div>
+                                                    <div class="home__product-best-seller-item-rating">
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                        <i class="fa-solid fa-star home-product-item__rating-active"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1339,11 +1403,13 @@
                             </div>
                         </div>
                     </div>
+                   <div class="col p-12">
                     <div class="row">
                         <div class="col p-12">
                             <img src="./assets/img/Aterpay.jpg" alt="" class="home__product-AfterPay">
                         </div>
                     </div>
+                   </div>
                     
                 </div>         
             </div>

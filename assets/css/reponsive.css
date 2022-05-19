@@ -1,4 +1,6 @@
-@media screen and (max-width: 1023px ) {
+
+
+@media screen and (max-width: 1024px ) {
     :root{
         --navbar-height:0px;
         --header-height:68px;
@@ -7,19 +9,29 @@
        display: none;
    }
    .header__cart{
-       width: 80px;
-       text-align: right;
+       text-align: center;
    }
+   .carousel-item {
+        height: 300px;
+    }
+    .nav__bar-btn{
+        display: block;
+    }
+    
+
+    .header__navbar-header {
+        justify-content: center;
+    }
    
 } 
 
 
 /* tablet */
-@media screen and (min-width:740px) and (max-width:1023px) { 
+@media screen and (min-width:740px) and (max-width:1024px) { 
    .hide-on-tablet{
        display: none;
    }
-    
+   
 }
 /* mobile */
 @media screen and (max-width:739px){
