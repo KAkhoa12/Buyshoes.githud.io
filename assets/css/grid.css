@@ -428,11 +428,11 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1024px) {
+/* @media (min-width: 740px) and (max-width: 1024px) {
     .wide {
         width: 644px;
     }
-}
+} */
 
 /* > PC low resolution */
 @media (min-width: 1025px) and (max-width: 1239px) {

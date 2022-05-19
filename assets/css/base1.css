@@ -4,6 +4,7 @@
     margin: 0;
     font-family: Poiret One;
 } 
+
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -27,6 +28,9 @@ body{
     --navbar-height:34px;
     --header-height:120px;
     --header-with-search-height: calc(  var(--header-height) - var(--navbar-height) );
+}
+.no-padding{
+    padding: 0 !important;
 }
 .btn{ 
     min-width: 124px;

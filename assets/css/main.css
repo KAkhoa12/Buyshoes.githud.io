@@ -220,6 +220,7 @@
     list-style: none;
     height: 50vh;
     overflow-y: auto;
+    margin: 0;
 }
 .header__cart-items{
     display: flex;
@@ -433,6 +434,7 @@
     color: #fff;   
     display: block;
     padding-right: 20px;
+    padding-left: 8px;
 }   
 .nav__over-play{
     position: fixed;
@@ -443,6 +445,7 @@
     background-color: rgba(0, 0,0, 0.3);
     display: none ;
     animation: fadein linear 0.2s;
+    z-index: 1;
 }
 .header__navbar-nav_tablet-mobile{
     position: fixed;
@@ -1015,6 +1018,7 @@ i.home-product-item__like-icon-fill {
 }
 .home__product-best-seller-heading div{
     text-align: center;
+    vertical-align: middle;
 
 }
 .home__product-best-seller-heading-more-link{
@@ -1041,6 +1045,7 @@ i.home-product-item__like-icon-fill {
     background-color: var(--white-color);
     position: relative;
     height: 30px;
+    width: 90%;
 }
 .home__product-contact-icon{
     font-size: 1.7rem;
@@ -1056,9 +1061,12 @@ i.home-product-item__like-icon-fill {
 .home__product-contact-sudmit-input{
     position: absolute;
     height: 100%;
-    width: 80%;
+    width: 70%;
     outline: none;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-right:none ;
+    border-left: 2px solid var(--primary-color-text);
     padding-left: 10px;
     font-size: 1.7rem;
     font-weight: bold;
@@ -1066,19 +1074,38 @@ i.home-product-item__like-icon-fill {
 .home__product-contact-sudmit-btn{
     position: absolute;
     right: 0;
-    width: 20%;
     height: 100%;
+    width: 50px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 span.home__product-contact-btn{
     font-weight: bold;
     cursor: pointer;
     border: 1px solid var(--white-color);
+    background-color: transparent;
     letter-spacing: 0.2rem;
 }
 span.home__product-contact-btn:hover{
     background: var(--white-color);
     color: var(--primary-color-text);
 }
+.home__product-contact-sudmit-sign-btn{
+    padding: 5px 10px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+}
+.home__product-contact-sudmit-sign-btn:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color-text);
+}
+
 /* footer */
 .footer__info{
     background-color: #ac393b;
@@ -1094,18 +1121,25 @@ span.home__product-contact-btn:hover{
     font-size: 2rem;
     font-weight: bold;
     color: var(--white-color);
+    padding-left: 5px;
 }
 .footer__info-list{
     list-style: none;
     padding-left: 0;
     padding-top: 10px;
+    padding-left: 20px;
 }
 .footer__info-item{
     line-height: 1.6rem;
     font-size: 1.6rem;
     color:var(--white-color);
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.footer__info-item:hover{
+    opacity: 0.8;
 }
 .footer__license{
     text-align: center;
