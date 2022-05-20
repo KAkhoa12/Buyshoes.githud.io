@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/fontawesome-free-6.1.1-web/css/all.css   ">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Log in</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poiret One;
+            font-weight: bold;
+        }
+        body{
+            min-height: 100vh;
+        }
+        :root{
+            --primary-color: #EE4D2D;
+            --White-color: #fff;
+        }
+        .modal{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            background: linear-gradient(-135deg,rgba(253, 137, 112,0.2),rgba(247, 72, 74,0.2));
+        }
+
+        .modal_body{
+            width: 500px;
+            background-color: var(--White-color);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .auth-form{
+            width: 100%;
+            background-color: var(--White-color);
+            align-items: center;
+            /* bottom: 50px; */
+            padding: 0 30px;
+        }
+        .auth-from_header{
+            text-align: center;
+            padding: 50px;
+            background:linear-gradient(-135deg,#fd8970,#f7484a);
+        }
+        .auth-from_header h3{
+            font-size: 30px;
+            padding: 0;
+            color: var(--White-color);
+        }
+        .auth-from_input{
+            width: 95%;
+            height: 40px;
+            margin-top: 18px;
+            padding: 0 12px;
+            font-size: 1rem;
+            border: 1px solid #f7484a;
+            outline: none;
+        }
+        .auth-from_controls{
+        
+        }
+        .btn--primary{
+            width: 50%;
+            height: 30px;
+            margin-top: 20px;
+            background-color: var(--primary-color);
+            color: var(--White-color);
+            border: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .auth-from_text{
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            color: rgb(109, 108, 108);
+        }
+        .auth-from_socials{
+            padding: 12px 36px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .btn.btn-icon{
+            width: 40%;
+            height: 30px;
+            margin: auto;
+            align-content: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .auth-from_socials-fb{
+            background-color: rgb(83, 51, 212);
+            color: var(--White-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .auth-from_socials-gg{
+            background-color: red;
+            display: flex;
+            align-items: center;
+            color: aliceblue;
+        }
+        .btn-sign{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .icon_socials{
+            padding: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="modal">
+    <div class="modal_body">
+        <div class="auth-from_header">
+            <h3>Login</h3>
+        </div>
+        <div class="auth-form">
+            <div class="auth-from_body">
+                <div class="auth-from_group">
+                    <input type="text" class="auth-from_input" placeholder="Type your email or your phonenumber">
+                </div>
+                <div class="auth-from_group">
+                    <input type="password" class="auth-from_input" placeholder="Type your password">
+                </div>
+            </div>
+            <di class="auth-from_controls">
+                <button class="btn--primary btn-sign">Log in</button>
+            </di>
+            <div class="auth-from_text">
+                <span>Or don't have a account: <a href="./Register.html" target="_blank" style="text-decoration: none; color: #fd8970;">Register</a></span>
+                <p>Or log in with</p>
+            </div>
+            <div class="auth-from_socials">
+                <a href="https://www.facebook.com/" class="auth-from_socials-fb btn btn-icon">
+                    <i class="fb-icon fa-brands fa-facebook-square icon_socials"></i>FaceBook
+                </a>
+                <a href="https://www.google.com/intl/vi/account/about/" class="auth-from_socials-gg btn btn-icon">
+                    <i class="gg-icon fa-brands fa-google icon_socials"></i>Google
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    </body></html>
