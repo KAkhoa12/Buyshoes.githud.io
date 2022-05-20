@@ -112,6 +112,10 @@
 }
 .header_navbar-register{
     height: 40px;
+    color: var(--white-color);
+}
+.header_navbar-register:hover{
+    color: var(--primary-color-text);
 }
 .header__search-button-icon{
     font-size: 1.4rem;
