@@ -44,11 +44,12 @@
                             <div class="header__logo hide-on-mobile">
                                 <img src="./assets/img/kisspng-sports-shoes-sneakers-logo-basketball-shoe-5bed52df6ec982.4903648915422799034538.png" alt="">
                             </div>
+                            <input type="checkbox" hidden id="header_user" class="header_user-item-btn">
                             <ul class="header__navbar-list hide-on-mobile-tablet">
                                 <li class="header_navbar-items border-btn-m">
-                                    <span class="header_navbar-user header_navbar-login ">
+                                    <label for="header_user" class="header_navbar-user header_navbar-login ">
                                         Log in
-                                    </span>
+                                    </label>
                                 </li>
                                 <li class="header_navbar-items border-btn-m--hover">
                                     <span class="header_navbar-user header_navbar-register">
@@ -302,7 +303,7 @@
                         <label for="nav__mobile-input"  class="nav__over-play"></label>
                         <div class="header__navbar-nav_tablet-mobile ">
                             <label for="nav__mobile-input" class="nav__mobile-close">
-                                <i class="fa-solid fa-xmark nav__bar-btn-icon-box"></i><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                                <i class="fa-solid fa-xmark nav__bar-btn-icon-box"></i>
                             </label>
                             <ul class="header__navbar-nav-list_mobile">
                                 <li class="header__navbar-nav-items_mobile-tablet">
@@ -824,7 +825,7 @@
                     <div class="row">
                         <div class="home__product-model">
                             <div class="row">
-                                <div class="col p-4 m-12">
+                                <div class="col p-4 t-4 m-12">
                                     <a href="" class="model-ad-link">
                                         <div class="home__product-model-ad">
                                             <div style="background-image: url(./assets/img/Ng_mau-ad-1.jpeg);" class="product-model-img">
@@ -839,7 +840,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col p-4 m12">
+                                <div class="col p-4 t-4 m-12">
                                     <a href="" class="model-ad-link">
                                         <div class="home__product-model-ad">
                                             <div style="background-image: url(./assets/img/Ng_mau-ad-2.jpg);" class="product-model-img">
@@ -853,7 +854,8 @@
                                             </a>
                                         </div>
                                     </a>
-                                </div><div class="col p-4 m-12">
+                                </div>
+                                <div class="col p-4 t-4 m-12">
                                     <a href="" class="model-ad-link">
                                         <div class="home__product-model-ad">
                                             <div style="background-image: url(./assets/img/Ng_mau-ad-1.jpeg);" class="product-model-img">
@@ -1093,17 +1095,17 @@
             <div class="home__product-contact">
                 <div class="grid wide">
                     <div class="row">
-                        <div class=" col p-4 m-12 ">
+                        <div class=" col p-4 t-6 m-12 ">
                             <h3 class="home__product-contact_heading">FIND STORE NEAR YOU</h3>
                             <span class="btn btn--primary home__product-contact-btn">FIND A STORE</span>
                         </div>
-                        <div class="  col p-4 m-12">
+                        <div class="  col p-4 t-6 m-12">
                             <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
                             <i class="fa-brands fa-github home__product-contact-icon"></i>
                             <i class="fa-brands fa-facebook home__product-contact-icon"></i>
                             <i class="fa-brands fa-instagram home__product-contact-icon"></i>
                         </div>
-                        <div class=" col p-4 m-12">
+                        <div class=" col p-4 t-6 m-12">
                             <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
                             <span class="home__product-contact-decription">Subscribe for the latest product news, events, and updates.</span>
                             <div class="home__product-contact-sudmit">
@@ -1126,7 +1128,7 @@
                 <img src="./assets/img/LOGOWED.png" alt="" class="footer__info-Logo">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col p-3 m12">
+                        <div class="col p-3 t-3 m12">
                             <h3 class="footer__info-heading">SHOP</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Brand</li>
@@ -1139,7 +1141,7 @@
                                 <li class="footer__info-item">Child</li>
                             </ul>
                         </div>
-                        <div class="col p-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">MY ACOUNT</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Sign in</li>
@@ -1149,7 +1151,7 @@
                                 <li class="footer__info-item">Basic Discount</li>
                             </ul>
                         </div>
-                        <div class="col p-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">GET HELP</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Help Center?</li>
@@ -1157,7 +1159,7 @@
                                 <li class="footer__info-item">Feedback via email</li>
                             </ul>
                         </div>
-                        <div class="col p-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">ABOUT </h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">About us</li>
@@ -1200,6 +1202,131 @@
                 </div>
             </div>
         </footer>
+        <!-- Modal layout -->
+        <div class="modal">
+            <label for="modal_btn" class="modal__overplay"> </label>
+            <input type="checkbox" id="modal_btn" class="modal_btn_close"> 
+            <div class="modal__body">
+                <label for="modal_btn" class="modal__body modal__body-sign">
+                        <!-- Register from -->
+                    <div class="auth-from-sign">
+                            <div class="auth-from__container">
+                                <label for="modal_btn" class="auth-from-resign-close">
+                                    <i class="fa-solid fa-xmark auth-from-resign-close"></i>
+                                </label>
+                                <div class="auth-from__header">
+                                    <h3 class="auth-from__heading">Register</h3>
+                                    <span class="auth-from__switch-btn">Log in</span>
+                                </div>
+                                <div class="auth-from__from">
+                                    <div class="auth-from__group">
+                                        <input type="email" class="auth-from__input" placeholder="Your email">
+                                    </div>
+                                    <div class="auth-from__group">
+                                        <input type="text" class="auth-from__input" placeholder="Phone number">
+                                    </div>
+                                    <div class="auth-from__group">
+                                        <input type="password" class="auth-from__input" placeholder="Create a password">
+                                    </div>
+                                    <div class="auth-from__group">
+                                        <input type="password" class="auth-from__input" placeholder="Enter the password">
+                                    </div>
+                                </div>
+                                <div class="auth-from__aside">
+                                    <p class="auth-from__policy-text">
+                                        By registering, you agree to the Shop about
+                                        <a href="" class="auth-from__text-link">Terms of Service</a> &
+                                        <a href="" class="auth-from__text-link">Privacy Policy</a>
+                                    </p>
+                                </div>
+                                <div class="auth-from__controls">
+                                    <button class="btn auth-from__controls-back btn--nomal">
+                                        BACK
+                                    </button>
+                                    <button class="btn btn--primary">
+                                    REGISTER
+                                    </button>
+                                </div>
+                            
+                            </div>
+                            <div class="auth-from__socials">
+                                <a href="" class="auth-from__socials--facebook btn btn--size-s btn--with-icon">
+                                    <i class="auth-from__socials-icon fa-brands fa-facebook-square"></i>
+                                    <span class="auth-from__socials-title">
+                                        Connect with Facebook
+                                    </span>
+                                </a>
+                                <a href="" class="auth-from__socials--google btn btn--size-s  btn--with-icon">
+                                    <i class="auth-from__socials-icon fa-brands fa-google"></i>
+                                    <span class="auth-from__socials-title">
+                                        Connect with Google
+                                    </span>
+                                </a>
+                            </div>
+                    </div>
+                        <!-- login form -->
+                
+                </label>
+                <label class="modal__body modal__body-resign">
+                    <label for="modal_btn" class="auth-from-resign">
+                        <label for="modal_btn" class="auth-from-resign-close">
+                            <i class="fa-solid fa-xmark auth-from-resign-close"></i>
+                        </label>
+                        <div class="auth-from__container">
+                            <div class="auth-from__header">
+                                <h3 class="auth-from__heading">Log in</h3>
+                                <span class="auth-from__switch-btn">Register</span>
+                            </div>
+                        <div class="auth-from__from">
+                            <div class="auth-from__group">
+                                <input type="email" class="auth-from__input" placeholder="Your email">
+                            </div>
+                            <div class="auth-from__group">
+                                <input type="password" class="auth-from__input" placeholder="Your password">
+                            </div>
+                        
+                        </div>
+                        <div class="auth-from__aside">
+                            <div class="auth-from__help">
+                                <a href="" class="auth-from__help-link auth-from__help-fogot">
+                                    Forgot the password?
+                                </a>
+                                <span class="auth-from__help-sparet">
+
+                                </span>
+                                <a href="" class="auth-from__help-link">
+                                    Need help?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="auth-from__controls">
+                            <button class="btn auth-from__controls-back">
+                                BACK
+                            </button>
+                            <button class="btn btn--primary">
+                                LOG IN
+                            </button>
+                        </div>
+                            
+                        </div>
+                        <div class="auth-from__socials">
+                            <a href="" class="auth-from__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-from__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-from__socials-title">
+                                    Connect with Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-from__socials--google btn btn--size-s  btn--with-icon">
+                                <i class="auth-from__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-from__socials-title">
+                                    Connect with Google
+                                </span>
+                            </a>
+                        </div>
+                    </label>
+                </label>
+            </div>
+        </div>
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
     </body>
 </html>
