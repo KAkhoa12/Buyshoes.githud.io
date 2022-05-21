@@ -330,14 +330,14 @@
                             </ul>
                             <ul class="header__navbar-list_mobile-tablet">
                                 <li class="header_navbar-items border-btn-m">
-                                    <span class="header_navbar-user header_navbar-login ">
+                                    <a style="text-decoration: none;color:var(--primary-color-text)" href="./html/Login.html" target="_blank" class="header_navbar-user header_navbar-login ">
                                         Log in
-                                    </span>
+                                    </a>
                                 </li>
                                 <li class="header_navbar-items border-btn-m--hover">
-                                    <span class="header_navbar-user header_navbar-register">
+                                    <a style="text-decoration: none; " target="_blank" href="./html/Register.html" class="header_navbar-user header_navbar-register">
                                         Register
-                                    </span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -1091,37 +1091,37 @@
                     
                 </div>         
             </div>
-            <div class="home__product-contact">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class=" col p-4 t-6 m-12 ">
-                            <h3 class="home__product-contact_heading">FIND STORE NEAR YOU</h3>
-                            <span class="btn btn--primary home__product-contact-btn">FIND A STORE</span>
-                        </div>
-                        <div class="  col p-4 t-6 m-12">
-                            <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
-                            <i class="fa-brands fa-github home__product-contact-icon"></i>
-                            <i class="fa-brands fa-facebook home__product-contact-icon"></i>
-                            <i class="fa-brands fa-instagram home__product-contact-icon"></i>
-                        </div>
-                        <div class=" col p-4 t-6 m-12">
-                            <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
-                            <span class="home__product-contact-decription">Subscribe for the latest product news, events, and updates.</span>
-                            <div class="home__product-contact-sudmit">
-                                <input type="text" class="home__product-contact-sudmit-input">
-                                <button class="home__product-contact-sudmit-btn ">
-                                    <i class="fa-solid fa-arrow-right "></i>
-                                </button>
-                            </div>
-                            <h3 class="home__product-contact_heading">PREFER TEXT UPDATES?</h3>
-                            <button class="home__product-contact-sudmit-sign-btn ">
-                                SIGN UP FOR SMS ALEARTS
+        </div>
+        <div class="home__product-contact">
+            <div class="grid wide">
+                <div class="row">
+                    <div class=" col p-4 t-6 m-12 ">
+                        <h3 class="home__product-contact_heading">FIND STORE NEAR YOU</h3>
+                        <span class="btn btn--primary home__product-contact-btn">FIND A STORE</span>
+                    </div>
+                    <div class="  col p-4 t-6 m-12">
+                        <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
+                        <i class="fa-brands fa-github home__product-contact-icon"></i>
+                        <i class="fa-brands fa-facebook home__product-contact-icon"></i>
+                        <i class="fa-brands fa-instagram home__product-contact-icon"></i>
+                    </div>
+                    <div class=" col p-4 t-6 m-12">
+                        <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
+                        <span class="home__product-contact-decription">Subscribe for the latest product news, events, and updates.</span>
+                        <div class="home__product-contact-sudmit">
+                            <input type="text" class="home__product-contact-sudmit-input">
+                            <button class="home__product-contact-sudmit-btn ">
+                                <i class="fa-solid fa-arrow-right "></i>
                             </button>
                         </div>
+                        <h3 class="home__product-contact_heading">PREFER TEXT UPDATES?</h3>
+                        <button class="home__product-contact-sudmit-sign-btn ">
+                            SIGN UP FOR SMS ALEARTS
+                        </button>
                     </div>
                 </div>
-            </div>     
-        </div>
+            </div>
+        </div>     
         <footer class="footer">
             <div class="footer__info">
                 <img src="./assets/img/LOGOWED.png" alt="" class="footer__info-Logo">
@@ -1202,130 +1202,7 @@
             </div>
         </footer>
         <!-- Modal layout -->
-        <div class="modal">
-            <label for="modal_btn" class="modal__overplay"> </label>
-            <input type="checkbox" id="modal_btn" class="modal_btn_close"> 
-            <div class="modal__body">
-                <label for="modal_btn" class="modal__body modal__body-sign">
-                        <!-- Register from -->
-                    <div class="auth-from-sign">
-                            <div class="auth-from__container">
-                                <label for="modal_btn" class="auth-from-resign-close">
-                                    <i class="fa-solid fa-xmark auth-from-resign-close"></i>
-                                </label>
-                                <div class="auth-from__header">
-                                    <h3 class="auth-from__heading">Register</h3>
-                                    <span class="auth-from__switch-btn">Log in</span>
-                                </div>
-                                <div class="auth-from__from">
-                                    <div class="auth-from__group">
-                                        <input type="email" class="auth-from__input" placeholder="Your email">
-                                    </div>
-                                    <div class="auth-from__group">
-                                        <input type="text" class="auth-from__input" placeholder="Phone number">
-                                    </div>
-                                    <div class="auth-from__group">
-                                        <input type="password" class="auth-from__input" placeholder="Create a password">
-                                    </div>
-                                    <div class="auth-from__group">
-                                        <input type="password" class="auth-from__input" placeholder="Enter the password">
-                                    </div>
-                                </div>
-                                <div class="auth-from__aside">
-                                    <p class="auth-from__policy-text">
-                                        By registering, you agree to the Shop about
-                                        <a href="" class="auth-from__text-link">Terms of Service</a> &
-                                        <a href="" class="auth-from__text-link">Privacy Policy</a>
-                                    </p>
-                                </div>
-                                <div class="auth-from__controls">
-                                    <button class="btn auth-from__controls-back btn--nomal">
-                                        BACK
-                                    </button>
-                                    <button class="btn btn--primary">
-                                    REGISTER
-                                    </button>
-                                </div>
-                            
-                            </div>
-                            <div class="auth-from__socials">
-                                <a href="" class="auth-from__socials--facebook btn btn--size-s btn--with-icon">
-                                    <i class="auth-from__socials-icon fa-brands fa-facebook-square"></i>
-                                    <span class="auth-from__socials-title">
-                                        Connect with Facebook
-                                    </span>
-                                </a>
-                                <a href="" class="auth-from__socials--google btn btn--size-s  btn--with-icon">
-                                    <i class="auth-from__socials-icon fa-brands fa-google"></i>
-                                    <span class="auth-from__socials-title">
-                                        Connect with Google
-                                    </span>
-                                </a>
-                            </div>
-                    </div>
-                        <!-- login form -->
-                
-                </label>
-                <label class="modal__body modal__body-resign">
-                    <label for="modal_btn" class="auth-from-resign">
-                        <label for="modal_btn" class="auth-from-resign-close">
-                            <i class="fa-solid fa-xmark auth-from-resign-close"></i>
-                        </label>
-                        <div class="auth-from__container">
-                            <div class="auth-from__header">
-                                <h3 class="auth-from__heading">Log in</h3>
-                                <span class="auth-from__switch-btn">Register</span>
-                            </div>
-                        <div class="auth-from__from">
-                            <div class="auth-from__group">
-                                <input type="email" class="auth-from__input" placeholder="Your email">
-                            </div>
-                            <div class="auth-from__group">
-                                <input type="password" class="auth-from__input" placeholder="Your password">
-                            </div>
-                        
-                        </div>
-                        <div class="auth-from__aside">
-                            <div class="auth-from__help">
-                                <a href="" class="auth-from__help-link auth-from__help-fogot">
-                                    Forgot the password?
-                                </a>
-                                <span class="auth-from__help-sparet">
-
-                                </span>
-                                <a href="" class="auth-from__help-link">
-                                    Need help?
-                                </a>
-                            </div>
-                        </div>
-                        <div class="auth-from__controls">
-                            <button class="btn auth-from__controls-back">
-                                BACK
-                            </button>
-                            <button class="btn btn--primary">
-                                LOG IN
-                            </button>
-                        </div>
-                            
-                        </div>
-                        <div class="auth-from__socials">
-                            <a href="" class="auth-from__socials--facebook btn btn--size-s btn--with-icon">
-                                <i class="auth-from__socials-icon fa-brands fa-facebook-square"></i>
-                                <span class="auth-from__socials-title">
-                                    Connect with Facebook
-                                </span>
-                            </a>
-                            <a href="" class="auth-from__socials--google btn btn--size-s  btn--with-icon">
-                                <i class="auth-from__socials-icon fa-brands fa-google"></i>
-                                <span class="auth-from__socials-title">
-                                    Connect with Google
-                                </span>
-                            </a>
-                        </div>
-                    </label>
-                </label>
-            </div>
-        </div>
+        
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
     </body>
 </html>

@@ -51,7 +51,7 @@
         }
         .auth-from_header{
             text-align: center;
-            padding: 50px;
+            padding: 20px;
             background:linear-gradient(-135deg,#fd8970,#f7484a);
         }
         .auth-from_header h3{
@@ -60,7 +60,7 @@
             color: var(--White-color);
         }
         .auth-from_input{
-            width: 95%;
+            width: 100%;
             height: 40px;
             margin-top: 18px;
             padding: 0 12px;
@@ -68,9 +68,7 @@
             border: 1px solid #f7484a;
             outline: none;
         }
-        .auth-from_controls{
-        
-        }
+
         .btn--primary{
             width: 50%;
             height: 30px;
@@ -122,6 +120,27 @@
         }
         .icon_socials{
             padding: 0 5px;
+        }
+        @media screen and (max-width:500px) {
+            .modal_body{
+                width: 400px;
+            }
+        }
+        @media screen and (max-width:400px) {
+            .modal_body{
+                width: 300px;
+            }
+            .auth-from_input{
+                font-size: 1rem;
+            }
+            .auth-from_socials{
+                display: block;
+            }
+            .btn.btn-icon{
+                width: 100%;
+                margin-top: 10px;
+            }
+
         }
 
     </style>

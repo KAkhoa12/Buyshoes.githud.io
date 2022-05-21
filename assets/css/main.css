@@ -7,7 +7,7 @@
     z-index: 3;
 }
 .header__scroll{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1038,6 +1038,7 @@ i.home-product-item__like-icon-fill {
     bottom: 0;
     right: 0;
     left: 0;
+
 }
 /* Contact product */
 .home__product-contact_heading{
@@ -1340,4 +1341,26 @@ span.home__product-contact-btn:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* =================================================================== */
+
+/* category.html */
+.header__scroll-category{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image:var(--primary-color);
+    z-index: 3;
+}
+.container-category{
+    padding-top: 130px;
+}
+.home__product-contact-category{
+    background-color: var(--primary-color-text);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 15px;
 }
