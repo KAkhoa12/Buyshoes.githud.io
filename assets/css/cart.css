@@ -1,0 +1,131 @@
+.header__scroll-info{
+    padding: 7px 0;
+    background: var(--primary-color);
+}
+.header__scroll-info-more{
+    display: flex;
+    justify-content: space-between;
+}
+.scroll__info-list{
+    display: flex;
+    list-style: none;
+}
+.header__scroll-logo-img{
+    height: 70px;;
+}
+.header__scroll-info-logo{
+    padding: 7px 0;
+    background-color: var(--white-color);
+}
+.header__scroll-with-search{
+    height: 70px;
+}
+.header__scroll-logo-name{
+    font-size: 3rem;
+    border-left: 1px solid var(--primary-color-text);
+    position: relative;
+    bottom: 25%;
+    left: 30px;
+    padding-left: 10px;
+    color: var(--primary-color-text);
+    
+}
+.header__scroll-with-search{
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--primary-color-text);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.header__scroll-with-search-input{
+    outline: none;
+    height: 100%;
+    width: 95%;
+    border: none;
+    padding-left: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.header__scroll-with-search-icon{
+    padding-left: 5px;
+    padding-bottom: 5px;    
+}
+.container__modyfi-heading
+{
+    font-size: 1.6rem;
+}
+.container__modyfi-check{
+    display: flex;
+    align-items: center;
+}
+.container__modyfi-name{
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.container__modyfi{
+    background-color: var(--white-color);
+    padding: 17px 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.brand-shop-product{
+    background-color: var(--white-color);
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+.brand-shop-product-info{
+    display: flex;
+    align-items: center;
+    height: 57px;
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(0,0, 0,0.1);
+}
+.brand-shop-product-name{
+    font-weight: bold;
+    padding-left: 8px;
+}
+.brand-shop-product-info-icon{
+    padding: 0 10px;
+}
+.brand-shop-product-img{
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba(0,0, 0,0.2);
+}
+.brand-shop-product-image{
+    display: flex;
+    align-items: center;
+}
+.brand-shop-product-image-info{
+    display: flex;
+    align-items: center;
+}
+.brand-shop-product-image-info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.brand-shop-product-content{
+    padding: 10px 0;
+}
+.brand-shop-product-image-name{
+    flex: 2;
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--text-color);
+    margin: 0 0 0 10px;
+    max-height: 2rem;
+    line-height: 2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    
+}
+.brand-shop-product-type{
+    flex: 1;
+    padding-left: 20px;
+}

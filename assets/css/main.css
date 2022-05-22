@@ -1352,6 +1352,7 @@ span.home__product-contact-btn:hover{
     right: 0;
     background-image:var(--primary-color);
     z-index: 3;
+    padding-top: 5px;
 }
 .container-category{
     padding-top: 130px;
