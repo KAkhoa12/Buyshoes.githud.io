@@ -15,8 +15,22 @@
         <title>Cart</title>
     </head>
     <body>
+        <div class="loading">
+            <div class="loading-box">
+                <div class="loading_div" style="--value: 1"></div>
+                <div class="loading_div" style="--value: 2"></div>
+                <div class="loading_div" style="--value: 3"></div>
+                <div class="loading_div" style="--value: 4"></div>
+                <div class="loading_div" style="--value: 5"></div>
+                <div class="loading_div" style="--value: 6"></div>
+                <div class="loading_div" style="--value: 7"></div>
+                <div class="loading_div" style="--value: 8"></div>
+                <i>Loading...</i>
+
+            </div>
+        </div>
         <div class="header__scroll">
-            <div class="header__scroll-info">
+            <div class="header__scroll-info hide-on-mobile">
                 <div class="grid wide">
                     <div class="header__scroll-info-more">
                         <ul class="scroll__info-list">
@@ -335,17 +349,17 @@
         <div class="home__product-contact-category">
             <div class="grid wide">
                 <div class="row">
-                    <div class="  p-4 t-6 m-12 ">
+                    <div class=" col p-4 t-6 m-12 ">
                         <h3 class="home__product-contact_heading">FIND STORE NEAR YOU</h3>
                         <span class="btn btn--primary home__product-contact-btn">FIND A STORE</span>
                     </div>
-                    <div class="   p-4 t-6 m-12">
+                    <div class=" col  p-4 t-6 m-12">
                         <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
                         <i class="fa-brands fa-github home__product-contact-icon"></i>
                         <i class="fa-brands fa-facebook home__product-contact-icon"></i>
                         <i class="fa-brands fa-instagram home__product-contact-icon"></i>
                     </div>
-                    <div class="  p-4 t-6 m-12">
+                    <div class=" col p-4 t-6 m-12">
                         <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
                         <span class="home__product-contact-decription">Subscribe for the latest product news, events, and updates.</span>
                         <div class="home__product-contact-sudmit">
@@ -370,7 +384,7 @@
 
                 <div class="grid wide">
                     <div class="row">
-                        <div class=" p-3 t-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">SHOP</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Brand</li>
@@ -383,7 +397,7 @@
                                 <li class="footer__info-item">Child</li>
                             </ul>
                         </div>
-                        <div class=" p-3 t-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">MY ACOUNT</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Sign in</li>
@@ -393,7 +407,7 @@
                                 <li class="footer__info-item">Basic Discount</li>
                             </ul>
                         </div>
-                        <div class=" p-3 t-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">GET HELP</h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">Help Center?</li>
@@ -401,7 +415,7 @@
                                 <li class="footer__info-item">Feedback via email</li>
                             </ul>
                         </div>
-                        <div class=" p-3 t-3 m-12">
+                        <div class="col p-3 t-3 m-12">
                             <h3 class="footer__info-heading">ABOUT </h3>
                             <ul class="footer__info-list">
                                 <li class="footer__info-item">About us</li>
@@ -444,5 +458,13 @@
                 </div>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loading_div::before').fadeOut('slow');
+                $('.loading').delay(2000).fadeOut('slow');
+                $('body').delay(2000).css({'overflow':'visible'})
+            })
+        </script>
     </body>
 </html> 

@@ -1,5 +1,67 @@
+/* loading */
+.loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--pink-blur);
+    z-index: 9999;
+   
+}
+.loading-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    height: 70px;
+}
+.loading-box i{
+   position: absolute;
+   top: 66px;
+   left: -10px;
+   font-size: 1.6rem;
+   font-weight: bold;
+   letter-spacing: 2px;
+   color: var(--primary-color-text);
+}
+.loading_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: rotate( calc(var(--value) *45deg));
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loading_div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:var(--primary-color-text);
+    animation: loading 1s infinite linear;
+    animation-delay: calc(var(--value) *0.125s);
+    z-index: 999;
+
+}
+@keyframes loading {
+
+    to{
+       transform: scale(0);
+    }
+}
 /* Header */
 .header{ 
+    position: relative;
     top: 0;
     left: 0;
     right: 0;

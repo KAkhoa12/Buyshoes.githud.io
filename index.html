@@ -15,8 +15,23 @@
     <link rel="stylesheet" href="./assets/css/main.css"> 
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>Buys Shoes 2hand</title>
-</head>
+</head> 
     <body>
+        <div class="loading">
+            <div class="loading-box">
+                <div class="loading_div" style="--value: 1"></div>
+                <div class="loading_div" style="--value: 2"></div>
+                <div class="loading_div" style="--value: 3"></div>
+                <div class="loading_div" style="--value: 4"></div>
+                <div class="loading_div" style="--value: 5"></div>
+                <div class="loading_div" style="--value: 6"></div>
+                <div class="loading_div" style="--value: 7"></div>
+                <div class="loading_div" style="--value: 8"></div>
+                <i>Loading...</i>
+
+            </div>
+        </div>
+
         <div class="app">
             <div class="header">
                 <div class="grid wide">
@@ -41,9 +56,9 @@
                             </ul>
                            
                             
-                            <div class="header__logo hide-on-mobile">
+                            <a href="./index.html" class="header__logo hide-on-mobile">
                                 <img src="./assets/img/kisspng-sports-shoes-sneakers-logo-basketball-shoe-5bed52df6ec982.4903648915422799034538.png" alt="">
-                            </div>
+                            </a>
                             <ul class="header__navbar-list hide-on-mobile-tablet">
                                 <li class="header_navbar-items border-btn-m">
                                     <a style="text-decoration: none;color:var(--primary-color-text)" href="./html/Login.html" target="_blank" class="header_navbar-user header_navbar-login ">
@@ -1202,7 +1217,14 @@
             </div>
         </footer>
         <!-- Modal layout -->
-        
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            $(window).on('load',function(){
+                $('.loading_div::before').fadeOut('slow');
+                $('.loading').delay(2000).fadeOut('slow');
+                $('body').delay(2000).css({'overflow':'visible'})
+            })
+        </script>
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
     </body>
 </html>
