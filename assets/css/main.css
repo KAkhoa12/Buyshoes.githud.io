@@ -269,10 +269,11 @@
 }
 .header__cart-wrap{
     position: relative;
-    display: inline-block;
+    display: block;
     padding: 5px;
     cursor: pointer;
     width: 100%;
+    text-decoration: none;
 }
 .header__cart-heading{
     text-align: left;
@@ -571,6 +572,13 @@
 }
 .nav__bar-btn{
     display: none;
+}
+.header__navbar-nav-items-link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.header__navbar-nav-items-link:hover{
+    color:var(--white-color);
 }
 /* sider */
 .carousel{
@@ -984,7 +992,7 @@ i.home-product-item__like-icon-fill {
 /* =============================== */
 
 /* Bestseller */ 
-.home__product-best-seller{
+#home__product-best-seller{
     background-color: var(--white-color);
     margin-bottom: 20px;
 }
@@ -1119,6 +1127,9 @@ i.home-product-item__like-icon-fill {
     color: var(--white-color);
     padding:10px 10px 0 0 ;
 
+}
+.home__product-contact_heading-icon-link{
+    text-decoration: none;
 }
 .home__product-contact-decription{
     font-size: 1.5rem;
