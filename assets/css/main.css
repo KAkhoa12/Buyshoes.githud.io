@@ -407,9 +407,9 @@
     width: 18px;
     height: 18px;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 8px;
     top: -2px;
-    right: -5px;
+    right: -10px;
     font-weight: 600;
     color: var(--primary-color-text);
     border: 1px solid var(--primary-color-text);
@@ -890,6 +890,7 @@ i.home-product-item__like-icon-fill {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    padding-top: 10px;
 }
 .home__product-ad-info{
     position: relative;
