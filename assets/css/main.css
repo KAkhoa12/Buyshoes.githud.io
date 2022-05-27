@@ -82,6 +82,16 @@
     align-items: center;
     padding-top: 10px;
 }
+.header__logo-sud-nav {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.header__logo-sud-nav img{
+    margin-top: 50px;
+    height: 100px;
+}
 .header__navbar-item-no-pointer{
     cursor: default;
 } 
@@ -260,7 +270,7 @@
 .header__cart-list::after{
     content: "";
     position: absolute;
-    right: 8px;
+    right: 2px;
     top: -26px;
     border-width:  16px 20px;
     border-style: solid;
@@ -274,6 +284,14 @@
     cursor: pointer;
     width: 100%;
     text-decoration: none;
+    height: 4rem;
+}
+.header__cart-wrap-link{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .header__cart-heading{
     text-align: left;

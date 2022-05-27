@@ -29,6 +29,9 @@
         right: 23px;
         top: 0px;
     }
+    .header__cart-wrap:hover .header__cart-list{
+        display: none;
+    }
    
 } 
 
@@ -59,9 +62,7 @@
     .hide-on-mobile{
         display: none;
     }
-    .header__cart-wrap:hover .header__cart-list{
-        display: none;
-    }
+
     .home__product-ad-img{
         padding-top: 10px;
     }
