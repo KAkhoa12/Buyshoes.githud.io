@@ -1229,13 +1229,17 @@ span.home__product-contact-btn:hover{
 .footer__info-item{
     line-height: 1.6rem;
     font-size: 1.6rem;
-    color:var(--white-color);
     font-weight: 700;
     padding-bottom: 7px;
     transition: all 0.1s linear;
     cursor: pointer;
 }
-.footer__info-item:hover{
+.footer__info-item-link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer__info-item-link:hover{
+    color: var(--white-color);
     opacity: 0.8;
 }
 .footer__license{
@@ -1456,4 +1460,33 @@ span.home__product-contact-btn:hover{
     right: 0;
     left: 0;
     padding-top: 15px;
+}
+/* product - item */
+
+.product-item-review{
+    background-color: var(--white-color);
+}
+.product-item-review-img{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+}
+.product-item-review-img-link{
+    width: 100%;
+}
+.product-item-review-img-link-sud{
+    width: 100%;
+}
+.review-img-color-link{
+    width: 100%;
+}
+.review-size-name-btn-number{
+    background-color: rgb(242, 242, 242);
+    min-width: 70px;
+    margin: 9px;
+    padding-block:5px;
+    border: none;
+    color: var(--primary-color-text);
+    font-weight: bold;
 }
