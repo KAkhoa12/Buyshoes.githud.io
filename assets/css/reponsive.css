@@ -27,10 +27,26 @@
     }
     .header__cart-number{
         right: 23px;
-        top: 0px;
+        top: -5px;
     }
     .header__cart-wrap:hover .header__cart-list{
         display: none;
+    }
+    .brand_page{
+        margin-top: 20px;
+    }
+    .background-brand-page-info-img{
+        top: -65%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .background-brand-page-info{
+        height: 150px;
+    }
+    .background-brand-page-info-name{
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
     }
    
 } 
@@ -73,6 +89,9 @@
     .footer__info-heading{
         padding: 0;
         text-align: center;
+    }
+    .background-brand-page-info-favorite{
+        right: 0;
     }
     
 }
