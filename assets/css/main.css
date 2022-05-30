@@ -1641,6 +1641,7 @@ span.home__product-contact-btn:hover{
     height: 170px;
     top: -80%;
     left: 10%;
+    box-shadow: 3px 0px 0px 1px ;
 }
 .background-brand-page-info-img img{
     position: absolute;
