@@ -67,7 +67,7 @@ body{
    position: relative;
    top: 0;
    left: 0;right: 0;
-   height: 100px;
+   height: 120px;
    background: var(--primary-color);
 }
 .header__about-us{
@@ -75,6 +75,30 @@ body{
    padding: 20px;
    font-size: 2rem;
    color: var(--white-color);
+}
+.header a {
+   position: relative;
+   left: 20px;
+   top: 20px;
+   padding: 10px;
+   
+
+}
+.header a i{
+   font-size: 3rem;
+   color: var(--white-color);
+   animation: animation-back linear 2s infinite;
+}
+@keyframes animation-back{
+   0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(-10px);
+    }
+    60% {
+      transform: translateX(-5px);
+    }
 }
 .header__about-us ion-icon{
    position: relative;
