@@ -48,7 +48,9 @@
         left: 50%;
         transform: translateX(-50%);
     }
-   
+    .review-buy-product{
+        flex-direction: column;
+    }
 } 
 
 
@@ -71,6 +73,7 @@
     .header__cart-list-items{
         height: 30vh;
     }
+    
    
 }
 /* mobile */
@@ -92,6 +95,13 @@
     }
     .background-brand-page-info-favorite{
         right: 0;
+    }
+    .review-img-name{
+        font-size: 2.5rem;
+    }
+    .review-img-distcount{
+        display: inline-block;
+        margin-top: 13px;
     }
     
 }
