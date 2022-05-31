@@ -344,20 +344,12 @@ span.home__product-contact-btn:hover{
 .footer__info{
     background-color: #ac393b;
 }
-.footer__info-Logo{
+.footer__info img{
     height: 70px;
-    width: 100%;
     position: relative;
-    margin: 0 0 20px;
-    z-index: 1;
-}
-.footer__info-Logo img{
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    height: 70px;
-    padding-top: 5px;
-
+    margin: 10px 0 20px;
 }
 .footer__info-heading{
     font-size: 2rem;
@@ -374,13 +366,17 @@ span.home__product-contact-btn:hover{
 .footer__info-item{
     line-height: 1.6rem;
     font-size: 1.6rem;
-    color:var(--white-color);
     font-weight: 700;
     padding-bottom: 7px;
     transition: all 0.1s linear;
     cursor: pointer;
 }
-.footer__info-item:hover{
+.footer__info-item-link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer__info-item-link:hover{
+    color: var(--white-color);
     opacity: 0.8;
 }
 .footer__license{
@@ -396,6 +392,7 @@ span.home__product-contact-btn:hover{
     padding-left: 20px;
     color: var(--white-color);
 }
+
 .home__product-buy-cart-item{
     background-color: var(--white-color);
     padding: 10px;
