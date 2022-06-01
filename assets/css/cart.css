@@ -94,6 +94,10 @@
     width: 100%;
     height: 100%;
 }
+.header__navbar-icon-link{
+    text-decoration: none;
+    color: white;
+}
 .scroll-user-name{
     color: var(--white-color);
     font-size: 1.6rem;
