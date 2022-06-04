@@ -177,9 +177,9 @@
                                                         </div>
                                                         <div class=" p-3 t-3 m-4">
                                                             <span class="brand-shop-product-Quantity">
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
                                                                 <span class="brand-shop-product-Quantity-number">1</span>
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
                     
                                                             </span>
                                                         </div>
@@ -217,9 +217,9 @@
                                                         </div>
                                                         <div class=" p-3 t-3 m-4">
                                                             <span class="brand-shop-product-Quantity">
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
                                                                 <span class="brand-shop-product-Quantity-number">1</span>
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
                     
                                                             </span>
                                                         </div>
@@ -257,9 +257,9 @@
                                                         </div>
                                                         <div class=" p-3 t-3 m-4">
                                                             <span class="brand-shop-product-Quantity">
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
                                                                 <span class="brand-shop-product-Quantity-number">1</span>
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
                     
                                                             </span>
                                                         </div>
@@ -297,9 +297,9 @@
                                                         </div>
                                                         <div class=" p-3 t-3 m-4">
                                                             <span class="brand-shop-product-Quantity">
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
                                                                 <span class="brand-shop-product-Quantity-number">1</span>
-                                                                <button class="brand-shop-product-Quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                                                <button class="brand-shop-product-Quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
                     
                                                             </span>
                                                         </div>
@@ -460,11 +460,33 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script>
+            
+            
             $(window).on('load',function(){
                 $('.loading_div::before').fadeOut('slow');
                 $('.loading').delay(2000).fadeOut('slow');
                 $('body').delay(2000).css({'overflow':'visible'})
             })
+           
         </script>
+        <script>
+            let count = 1;
+            const value = document.querySelectorAll(".brand-shop-product-Quantity-number");
+            const btns = document.querySelectorAll(".brand-shop-product-Quantity-btn");
+            btns.forEach(function (btn) {
+            btn.addEventListener("click", function (e) {
+            const styles = e.currentTarget.classList;
+            if (styles.contains("minus")) {
+            count--;
+            } else if (styles.contains("plus")) {
+            count++;
+            } 
+            value.textContent = count;
+            });
+            });
+
+            
+        </script>
+
     </body>
 </html> 

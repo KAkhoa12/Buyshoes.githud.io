@@ -1,0 +1,33 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #feecec;
+}
+.whoops {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whoops img{
+    height: 200px;;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.content .info{
+    color: #f7484a;
+}
+.content h4{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.content p{
+    font-size: 30px;
+}
