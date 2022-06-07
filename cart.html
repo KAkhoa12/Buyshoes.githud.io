@@ -356,9 +356,15 @@
                     </div>
                     <div class=" col  p-4 t-6 m-12">
                         <h3 class="home__product-contact_heading">FOLLOW ME IN</h3>
-                        <i class="fa-brands fa-github home__product-contact-icon"></i>
-                        <i class="fa-brands fa-facebook home__product-contact-icon"></i>
-                        <i class="fa-brands fa-instagram home__product-contact-icon"></i>
+                        <a href="https://github.com/KAkhoa12" target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-github home__product-contact-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/huynhkhoa85/" target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-facebook home__product-contact-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khoa_ka_0304/"  target="_blank" class="home__product-contact_heading-icon-link">
+                            <i class="fa-brands fa-instagram home__product-contact-icon"></i>
+                        </a>
                     </div>
                     <div class=" col p-4 t-6 m-12">
                         <h3 class="home__product-contact_heading">JOIN OUR EMAIL LIST</h3>
@@ -471,7 +477,7 @@
         </script>
         <script>
             let count = 1;
-            const value = document.querySelectorAll(".brand-shop-product-Quantity-number");
+            const value = document.querySelector(".brand-shop-product-Quantity-number");
             const btns = document.querySelectorAll(".brand-shop-product-Quantity-btn");
             btns.forEach(function (btn) {
             btn.addEventListener("click", function (e) {

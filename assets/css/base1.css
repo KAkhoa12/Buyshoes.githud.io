@@ -10,6 +10,16 @@ html{
     line-height: 1.6rem;
     font-family: Poiret One;
     scroll-behavior: smooth;
+    
+}
+html::-webkit-scrollbar{
+    width: 11px;
+    background-color: rgb(229, 214, 214);
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: var(--primary-color);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 body{ 
     background-color: var(--pink-blur);

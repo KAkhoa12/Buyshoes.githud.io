@@ -474,3 +474,6 @@ span.home__product-contact-btn:hover{
 .header__modal-btn-open:checked ~ .header__modal-body-icon{
     display: none;
 }
+.home__product-contact_heading-icon-link{
+    text-decoration: none;
+}
