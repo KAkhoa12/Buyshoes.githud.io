@@ -2,8 +2,8 @@
 
 Các thành viên bao gồm: 
     Huỳnh Đăng Khoa - 2001207266
-    Huỳnh Đăng Khoa - 2001207266
-    Huỳnh Đăng Khoa - 2001207266
+    Chu Huy Khánh - 2001207017 
+    Vương Đức Khánh - 2001207096
 
 
 Phân công nội dung: 

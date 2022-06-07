@@ -1474,6 +1474,12 @@ span.home__product-contact-btn:hover{
     position: relative;
     border-radius: 2px;
 }
+#product-item-review-img-frame{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 .product-item-review-img-link{
     width: 100%;
 }
