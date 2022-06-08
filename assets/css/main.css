@@ -1512,6 +1512,7 @@ span.home__product-contact-btn:hover{
     border-radius: 5px;
     border: 2px solid var(--primary-color-text);
     color: var(--primary-color-text);
+    margin: 6px 2px;
 }
 .review-size-name-btn-number{
     font-size: 1.5rem;
@@ -1522,6 +1523,10 @@ span.home__product-contact-btn:hover{
     border: none;
     color: var(--primary-color-text);
     font-weight: bold;
+}
+.review-size-name-btn-number:hover{
+    background-color: var(--primary-color-text);
+    color: var(--white-color);
 }
 .product-item-review-price-new{
     font-size: 3.5rem;
